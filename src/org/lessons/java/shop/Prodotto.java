@@ -13,7 +13,7 @@ public class Prodotto {
 	private double iva;
 	
 	public Prodotto(String name, String description,double price ,double iva) {
-		setCode(code);
+		setCode();
 		setName(name);
 		setDescription(description);
 		setPrice(price);
@@ -25,7 +25,7 @@ public class Prodotto {
 		return this.code;
 	}
 	
-	private void setCode(int code) {
+	private void setCode() {
 		Random rnd = new Random();
 		this.code = rnd.nextInt(0,2147483647);
 //		this.code = 1;
